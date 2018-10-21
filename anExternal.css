@@ -1,0 +1,68 @@
+body{
+    background-image: linear-gradient(black,grey)
+}
+#Header {
+    border: solid 8px black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color:white;
+    outline-style: dotted;
+    outline-color:pink;
+    color: grey
+}
+
+h2 {
+    text-align: center;
+    outline-style: dotted;
+}
+#BuildingShow {
+    border: solid 8px black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: white;
+    outline-color: rgb(240, 183, 216);
+    outline-style: solid;
+    float: left;
+    border-radius: 30px;
+    padding-bottom: 8px;
+
+}
+
+#ArchitectsandUWbuilding{
+    font-style: italic;
+    border: solid 8px black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color:white;
+    outline-style: dashed;
+    outline-color:pink;
+    float: right;
+    border-image: url(border.png) 30 stretch;
+}
+
+#intro1 {
+    text-align: center
+}
+
+#intro2 {
+    text-align:center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
