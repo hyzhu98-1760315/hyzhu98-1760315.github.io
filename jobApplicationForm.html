@@ -1,0 +1,151 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<h1>Job Application</h1>
+</head>
+<Meta char set="utf-8"/>
+<Title>Job Application </Title>
+<body>
+                Today's Date:<input type= "date" name="dateToday" placeholder="Today's Date" required>
+        <br>
+        <label>Your gender</label>
+                <select name="gender"> <option value="man">Man</option> <option value="woman">Woman</option> </select>
+
+<form action="html_form_action.asp" method="post"></form>
+
+<table border="0" cellingpadding="5" cellingspacing="0"> 
+		<tr>
+            <br>
+            <td style="width:50%">
+                    <label for="Account name"><b>Account name</b></label><br />
+                    <input name="Account name" type="text" maxlength="50" style="width: 200px" />
+                    </td> <td style="width: 50%">
+                    <label for="Password"><b>Password</b></label><br />
+                    <input name="Password" type="text" maxlength="50" style="width: 200px" />
+                    </td> </tr> <tr> <td colspan="5">
+                    <br>
+            <label for="First Name"><b>First name *</b></label><br />
+            <input name="First Name" type="text" maxlength="50" style="width: 200px" />
+        </td> </tr> <tr> <td colspan="5">
+            <label for="Last Name"><b>Last name *</b></label><br />
+            <input name="Last Name" type="text" maxlength="50" style="width: 200px" />
+            </td> </tr> <tr> <td colspan="5">
+                <br>
+            <label for="Email"><b>Email *</b></label><br />
+            <input name="Email" type="text" maxlength="50" style="width: 200px" />
+            </td> </tr> <tr> <td colspan="5">
+                <br>
+                    <label for="Position"><b>Position you are applying for </b></label><br />
+                    <input name="Position" type="text" maxlength="50" style="Width: 200px"/>
+                    </td> </tr> <tr> <td>
+                        <br>
+                    <label for="Salary"><b>Salary you wish to have:</b></label><br /> 
+                    <br>
+                    <form>
+                            <td><label for = "salaryreq">Monthly Salary Required</label><br><input id="salaryreq" name="salaryreq" type="number"  min="1000" max="10000" value="1000" step="100"></td>
+                            </form>
+                    </td> </tr> <tr> <td colspan="5">
+                   
+    <br>
+	<fieldset>
+        <legend>Education and Work experience</legend>
+        
+		<div class="EducationandExperience">
+                <h4>What is your education level? (check all that apply)</h4>
+                <ul>
+                    <li><input type="checkbox" name="education_kG" value="kindergarten">Kindergarden</li>
+                    <li><input type="checkbox" name="education_ms" value="MiddleSchool">Middle School</li>
+                    <li><input type="checkbox" name="education_hs" value="HighSchool">High School</li>
+                    <li><input type="checkbox" name="education_cu" value="Colldgeundergrad">College(undergraduate)</li>
+                    <li><input type="checkbox" name="education_cg" value="Colldgegrad">College(graduate)</li>
+                    <li><input type="checkbox" name="education_phd" value="PHDorhigher">PHD or higher</li>
+                </ul>
+                <h4>Have you ever work before?</h4>
+                <input type="radio" name="answer" value="yes"> Yes <input type="radio" name="answer" value="no"> No
+                <br>
+                <br>
+                <label>If so, write your experience down</label>
+                <br>
+                <textarea name="Workexperience" rows="5" cols="50"></textarea>
+	</fieldset>
+
+    <br>
+	<fieldset>
+		<legend>Time</legend>
+		<div class="field">
+            <h4>Are you legally able to be employed in this country?</h4> 
+            <input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field"> 
+			<h4>What type of position are you seeking? (check all that apply)</h4>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			</ul>
+		</div>
+		<div class="field">
+			<h4>Hours available</h4>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+    </fieldset>
+    <br>
+
+		<h2>Self-introduction and questions</h2>
+		<div class="field">
+			<label>What is your hobby?</label><br>
+			<textarea name="Hobby" rows="8" cols="100"></textarea>
+		</div>
+		<div class="field">
+			<label>Why you think we will hire you?</label><br>
+			<textarea name="Whywehireyou" rows="8" cols="100"></textarea>
+        </div>
+        <div class="field">
+                <label>Why do you choose us?</label><br>
+                <textarea name="Whychooseus" rows="8" cols="100"></textarea>
+            </div>
+       
+            <label>Upload a picture of you</label>
+            <form action="/action_page.php">
+                <input type="file" name="pic" accept="image/*">
+              </form>
+<br>
+<br>
+	<input type="submit" value="Submit form">
+
+</body>
+</html>
+</table>
